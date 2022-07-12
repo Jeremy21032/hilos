@@ -18,3 +18,5 @@ if __name__ == '__main__':
     hilo = threading.Thread(target=hola_mundo, args=("Jere",))
     hilo.start()  # este metodo ejecuta el target en segundo plano
     # hasta este punto, se han ejecutado los hilos principales.
+    hilo.join()
+    print("Imprimiendo desde el hilo principal")
